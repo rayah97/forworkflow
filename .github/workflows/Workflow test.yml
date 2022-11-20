@@ -17,9 +17,14 @@ jobs:
     steps:
  
       - uses: actions/checkout@v3
+        name: Let's Checkout
+        id: vars
 
-    
+
       - name: Print test message
         run: echo Success!
+        
+      - name: Uses checkout output
+        run: echo ${{steps.vars.outputs}}
 
     
