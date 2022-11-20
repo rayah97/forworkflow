@@ -1,0 +1,14 @@
+name: github-actions
+on: [push]
+
+
+on:
+  push:
+      branches: * 
+      
+      
+jobs:
+ 
+   - uses: Print Successfull message
+     run: echo " Success"
+    
